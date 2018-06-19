@@ -1,0 +1,125 @@
+//fixed header
+.navigation {
+  position: relative;
+}
+
+.headroom {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 8rem;
+  z-index: 1000;
+  animation-duration: .5s;
+  animation-fill-mode: both;
+  will-change: transform;
+}
+
+.header {
+  padding: 10px;
+  background: transparent;
+  overflow: hidden;
+}
+
+.header__logo {
+  width: 269;
+  height: 68px;
+}
+
+.header__menu {
+  margin: 20px 0 0 0;
+  padding: 0;
+  float: right;
+  font-family: "FuturaPT", sans-serif;
+  font-size: 1.5375rem;
+  font-weight: 400;
+  line-height: 2em;
+  list-style: none;
+  text-align: right;
+}
+
+.header__menu-item {
+  margin: 0 10px;
+  display: inline-block;
+  padding: 0 1em;
+  color: #fff;
+  text-transform: uppercase; 
+  border-radius: 10px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $background-white;
+    color: $primary-color;
+    font-weight: bold;
+
+    .redirect_link {
+      text-decoration: none;
+      color: $primary-color;
+      
+      &:hover {
+        cursor: pointer;
+        background-color: $background-white;
+        color: $primary-color;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.redirect_link {
+  text-decoration: none;
+  color: white;
+  
+  &:hover {
+    cursor: pointer;
+    background-color: $background-white;
+    color: $primary-color;
+    font-weight: bold;
+  }
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1600px) {
+  .header__logo {
+    width: 249;
+    height: 63px;
+  }
+
+  .header__menu {
+    font-size: 1.3375rem;
+  }
+
+  .header__menu-item {
+    margin: 0 0px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .header__logo {
+    width: 229;
+    height: 58px;
+  }
+
+  .header__menu {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header__logo {
+    width: 219;
+    height: 53px;
+    margin-left: 5%;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .headroom {
+    border-bottom: 1px solid;
+  }
+}

@@ -1,0 +1,199 @@
+.streetripInformation {
+  @include flexbox;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.streetrip_back {
+  margin: 80px;
+  text-align: center;
+  max-width: 915px;
+}
+
+.button_back {
+  width: 120px;
+  height: 29px;
+  border-radius: 28px;
+  background-image: linear-gradient(to right, #00c0da, #0083b2);
+  color: white;
+}
+
+.streetrip_description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  margin: 0 80px;
+}
+
+.streetrip_image {
+  width: 40%;
+  text-align: center;
+
+  img {
+    width: 100%;
+    max-width: 80%;
+  }
+}
+
+.streetrip_definition {
+  width: 60%;
+}
+
+.streetrip_line {
+  width: 146px;
+  height: 3px;
+  border-style: solid;
+  border-width: 2px;
+  border-image-source: linear-gradient(to right, #00c0da, #0087b5);
+  border-image-slice: 1;
+  margin: 10px 0 20px 0;
+}
+
+.streetrip_title {
+  font-size: 2.5em;
+  margin: 20px 0 0 0;
+  color: #454242;
+  font-weight: 500;
+}
+
+.streetrip_paragraph {
+  font-size: 1.6vw;
+  font-weight: 300;
+  color: #454242;
+  margin: 25px 0;
+}
+
+.streetrip_requirements {
+  margin: 80px 80px 0px 80px;
+  width: 90%;
+  border-radius: 21px;
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}
+
+.streetrip_requirements__content {
+  margin: 80px;
+
+  h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #454242;
+  }
+
+  p {
+    font-size: 2.5em;
+    color: #454242;
+    font-weight: 300;
+  }
+}
+
+.streetrip_tools {
+  margin: 80px;
+  width: 90%;
+}
+
+.streetrip_tools__header {
+  margin: 0px 80px 80px 80px;
+
+  h1 {
+    font-size: 3.5em;
+    font-weight: 600;
+    color: #454242;
+
+    small {
+      font-weight: 300;
+      color: #058eb9;
+    }
+  }
+}
+
+.streetip_tools__content {
+  margin: 80px;
+}
+
+.icon_check {
+  font-size: 3em;
+  background: linear-gradient(to bottom, #00c0da, #0091bc);;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: initial; /* reset Font Awesome's display:inline-block */
+}
+
+.streetrip_check {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+
+  i {
+    align-self: self-start;
+  }
+
+  p {
+    margin-left: 20px;
+    font-size: 2.5em;
+    color: #454242;
+    font-weight: 300;
+  }
+}
+
+.streetrip_tools__images {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.streetrip_tools__result {
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0;
+  border-radius: 21px;
+  background-image: linear-gradient(to bottom, #008cb8, #05c1da);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+}
+
+.streetrip_result_container {
+  margin: 40px 80px;
+
+  h1 {
+    font-size: 3.5em;
+    font-weight: 600;
+    color: #ffffff;
+  }
+}
+
+.streetrip_result_container__content {
+  margin: 40px 80px 0 80px;
+
+  p {
+    color: #ffffff;
+  }
+}
+
+.icon_check--white {
+  font-size: 3em;
+    background: linear-gradient(to bottom, white, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial;
+}
+
+@media screen and (max-width: 800px) {
+
+  .streetrip_description {
+    flex-direction: column;
+  }
+
+  .streetrip_image {
+    width: 70%;
+  }
+
+  .streetrip_definition {
+    width: 70%;
+  }
+
+  .streetrip_paragraph {
+    font-size: 2.5em;
+  }
+}

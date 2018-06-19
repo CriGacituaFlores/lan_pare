@@ -1,0 +1,163 @@
+// Our services
+
+.ourservice {
+  @include flexbox;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ourservice__item {
+  width: 50%;
+  margin: 80px;
+}
+
+.ourservice__title {
+  font-weight: bold;
+  font-size: 40px;
+  color: $general-title;
+}
+
+
+.ourservicelist__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 0 80px 0;
+  width: 100%;
+}
+
+.cardService {
+  width: 40%;
+  height: 345px;
+  margin: 40px;
+  border-radius: 21px;
+  background-color: $background-white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    //background-image: linear-gradient(to bottom, #0088b5, #00c0da);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.17);
+    background-image: linear-gradient(to bottom, #0088b5, #00c0da);
+    -webkit-transition: background-image 1s linear;
+    -moz-transition: background-image 1s linear;
+    -o-transition: background-image 1s linear;
+    transition: background-image 1s linear;
+
+    .cardService__title {
+      color: $background-white;
+    }
+
+    .cardService__paragraph {
+      color: $background-white;
+    }
+  }
+}
+
+.cardService__title {
+  max-width: 55%;
+  margin: 50px 50px 10px 50px;
+  font-size: 30px;
+  color: $general-title;
+}
+
+.cardService__paragraph {
+  margin: 20px 50px;
+  font-size: 19px;
+  color: $general-title;
+}
+
+.line {
+  width: 90px;
+  height: 2px;
+  margin-left: 50px;
+  border-style: solid;
+  border-width: 4px;
+  border-image-source: linear-gradient(to right, #00c0da, #0087b5);
+  border-image-slice: 1;
+}
+
+.ourservicelist__button {
+  flex-grow: 1;
+  align-items: flex-end;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.buttonservice {
+  width: 157px;
+  height: 35px;
+  font-size: 15px;
+  margin: 20px;
+  align-self: flex-end;
+  border-radius: 28px;
+  cursor: pointer;
+  border: solid 1px $background-white;
+  background-image: linear-gradient(to bottom, #0088b5, #00c0da);
+  color: $background-white;
+}
+
+@media screen and (max-width: 1440px) {
+
+  .cardService__title {
+    max-width: 100%;
+    font-size: 25px;
+  }
+
+  .cardService__paragraph {
+    font-size: 17px;
+    color: $general-title;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+
+  .cardService__title {
+    max-width: 100%;
+    font-size: 23px;
+  }
+
+  .cardService__paragraph {
+    font-size: 15px;
+    color: $general-title;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .ourservicelist__item {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .ourservice__item {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .cardService {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .cardService__title {
+    max-width: 100%;
+    font-size: 25px;
+  }
+
+  .cardService__paragraph {
+    font-size: 17px;
+    color: $general-title;
+  }
+
+  .ourservice__title {
+    text-align: left;
+    margin: 30px;
+  }
+
+  .lines {
+    margin: 30px;
+  }
+}

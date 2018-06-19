@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  padding: 3em;
+  box-sizing: border-box;
+}
+
+.lines {
+  width: 90px;
+  height: 2px;
+  border-style: solid;
+  border-width: 4px;
+  border-image-source: linear-gradient(to right, #00c0da, #0087b5);
+  border-image-slice: 1;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+  font-size: 1.5em;
+  opacity: 0.8; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ffffff;
+  font-size: 1.5em;
+  opacity: 0.8; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ffffff;
+  font-size: 1.5em;
+  opacity: 0.8; /* Firefox */
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}

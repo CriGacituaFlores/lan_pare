@@ -1,0 +1,84 @@
+//Contact
+
+.contact {
+  @include flexbox;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #00a8c3, #0089b6);
+}
+
+.contactContainer {
+  margin: 125px 80px;
+}
+
+.contact__message {
+  font-size: 3em;
+  text-align: center;
+}
+
+.message__title {
+  color: $background-white;
+}
+
+.message__paragraph {
+  color: #f2f2f2;
+  font-weight: 100;
+}
+
+.contact__email {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__input {
+  width: 35%;
+  margin: 0 10px;
+  height: 68px;
+  border-radius: 21px;
+  box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.9);
+  border: solid 1px #ffffff;
+  background-color: transparent;
+  text-align: center;
+  outline: none;
+}
+
+.contact__button {
+  font-size: 2.7em;
+  font-weight: 500;
+  color: #0083b2;
+  width: 25%;
+  height: 68px;
+  cursor: pointer;
+  border-radius: 21px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  border: solid 1px #ffffff;
+  border: solid 1px var(--white);
+}
+
+@media screen and (max-width: 808px) {
+
+  .contactContainer {
+    margin: 60px 60px;
+  }
+
+  .message__title {
+    font-size: 1em;
+  }
+
+  .contact__email {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact__input {
+    margin: 20px;
+    width: 100%;
+  }
+
+  .contact__button {
+    width: 70%;
+    font-size: 1.7em;
+  }
+}
